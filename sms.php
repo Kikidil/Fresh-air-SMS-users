@@ -1,16 +1,16 @@
 <?php
 
-$senderPhone   = $_POST['sender'];    /* +61404085740 */
-$messageText   = $_POST['text'];      /*Fresh air quality level   */
+$senderPhone   = $_POST['+61404085742'];    /*One user */
+$messageText   = $_POST['Fresh air quality level'];      /*checking air quality level   */
 
-$sent_dt       = $_POST['sc_datetime'];      /* date and time when the message was sent, in the local time zone of the computer on which SMS Enabler is running */
-$sent_dt_utc   = $_POST['sc_datetime_utc'];  /* date and time when the message was sent, in UTC */
+$sent_dt       = $_POST['sc_2016-04-16'];      /* date and time when the message was sent, in the local time zone of the computer on which SMS Enabler is running */
+$sent_dt_utc   = $_POST['sc_2016-04-16_05:42:55'];  /* date and time when the message was sent, in UTC */
                                              /* note: date and time values are expressed using "YYYY-MM-DD HH:MM:SS" format */
 
-$smsc          = $_POST['smsc'];      /* SMS center number (not supported when SMS Enabler is connected to a Nokia phone). */
+$smsc          = $_POST['+61'];      /* SMS center number (not supported when SMS Enabler is connected to a Nokia phone). */
 $tag           = $_POST['tag'];       /* Tag value. You can define this in SMS Enabler's settings, and use it to pass additional information. */
 
-$is_incomplete = $_POST['has_missing_parts']; /* This variable can be set to "yes" or "no". */
+$is_incomplete = $_POST['yes']; /* This variable can be set to "yes" or "no". */
                                               /* "yes" - if the message is a multipart (concatenated) message and not all of its parts have arrived */
                                               /* "no"  - if the message is complete */
 
