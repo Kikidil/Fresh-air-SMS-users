@@ -7,10 +7,10 @@ $sent_dt       = $_POST['sc_2016-04-16'];      /* date and time when the message
 $sent_dt_utc   = $_POST['sc_2016-04-16_05:42:55'];  /* date and time when the message was sent, in UTC */
                                              /* note: date and time values are expressed using "YYYY-MM-DD HH:MM:SS" format */
 
-$smsc          = $_POST['+61'];      /* SMS center number (not supported when SMS Enabler is connected to a Nokia phone). */
-$tag           = $_POST['tag'];       /* Tag value. You can define this in SMS Enabler's settings, and use it to pass additional information. */
+$smsc          = $_POST['+61'];      /* SMS center number */
+$tag           = $_POST['tag'];       
 
-$is_incomplete = $_POST['yes']; /* This variable can be set to "yes" or "no". */
+$is_incomplete = $_POST['yes']; 
                                               /* "yes" - if the message is a multipart (concatenated) message and not all of its parts have arrived */
                                               /* "no"  - if the message is complete */
 
