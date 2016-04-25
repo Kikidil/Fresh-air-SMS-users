@@ -1,13 +1,7 @@
 <?php
 
-/*  PHP example of an HTTP handler that handles requests from SMS Enabler.
- *  You can modify and use it for processing of incoming SMS messages and sending automatic SMS replies.
- *  To use it, put this file on your website and specify its URL in SMS Enabler's SMS-to-Webserver settings, 
- *  such as http://yourserv.com/sms.php
- */
-
-$senderPhone   = $_POST['sender'];    /* sender's phone number */
-$messageText   = $_POST['text'];      /* text of the message   */
+$senderPhone   = $_POST['sender'];    /* +61404085740 */
+$messageText   = $_POST['text'];      /*Fresh air quality level   */
 
 $sent_dt       = $_POST['sc_datetime'];      /* date and time when the message was sent, in the local time zone of the computer on which SMS Enabler is running */
 $sent_dt_utc   = $_POST['sc_datetime_utc'];  /* date and time when the message was sent, in UTC */
